@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "remix-concepts-in-nextjs",
+  "version": "1.0.0",
+  "description": "An exploration in implementing various Remix concepts in Next.js.",
+  "main": "index.js",
+  "author": "Robin Andeer",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14"
+  }
+}
