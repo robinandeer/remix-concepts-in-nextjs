@@ -1,10 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/formidable': ^2.0.3
   '@types/marked': ^4.0.1
   '@types/node': ^17.0.8
   '@types/react': ^17.0.38
   '@types/react-dom': ^17.0.11
+  formidable: ^2.0.1
   front-matter: ^4.0.2
   marked: ^4.0.10
   next: ^12.0.8
@@ -14,6 +16,7 @@ specifiers:
   typescript: ^4.5.4
 
 dependencies:
+  formidable: 2.0.1
   front-matter: 4.0.2
   marked: 4.0.10
   next: 12.0.8_react-dom@17.0.2+react@17.0.2
@@ -22,6 +25,7 @@ dependencies:
   tiny-invariant: 1.2.0
 
 devDependencies:
+  '@types/formidable': 2.0.3
   '@types/marked': 4.0.1
   '@types/node': 17.0.8
   '@types/react': 17.0.38
@@ -172,6 +176,12 @@ packages:
     dev: false
     optional: true
 
+  /@types/formidable/2.0.3:
+    resolution: {integrity: sha512-u1dFrrhT2XrNzDJ+f/qwxxEU9cGTiQvItSaghiU+sQXX/XU+jsxCGrAuUR7BjkeHHB2P4pR4XUr52TGDNfzhRg==}
+    dependencies:
+      '@types/node': 17.0.8
+    dev: true
+
   /@types/marked/4.0.1:
     resolution: {integrity: sha512-ZigEmCWdNUU7IjZEuQ/iaimYdDHWHfTe3kg8ORfKjyGYd9RWumPoOJRQXB0bO+XLkNwzCthW3wUIQtANaEZ1ag==}
     dev: true
@@ -207,6 +217,10 @@ packages:
       sprintf-js: 1.0.3
     dev: false
 
+  /asap/2.0.6:
+    resolution: {integrity: sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=}
+    dev: false
+
   /big.js/5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
     dev: false
@@ -229,6 +243,13 @@ packages:
     resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==}
     dev: true
 
+  /dezalgo/1.0.3:
+    resolution: {integrity: sha1-f3Qt4Gb8dIvI24IFad3c5Jvw1FY=}
+    dependencies:
+      asap: 2.0.6
+      wrappy: 1.0.2
+    dev: false
+
   /emojis-list/2.1.0:
     resolution: {integrity: sha1-TapNnbAPmBmIDHn6RXrlsJof04k=}
     engines: {node: '>= 0.10'}
@@ -240,6 +261,15 @@ packages:
     hasBin: true
     dev: false
 
+  /formidable/2.0.1:
+    resolution: {integrity: sha512-rjTMNbp2BpfQShhFbR3Ruk3qk2y9jKpvMW78nJgx8QKtxjDVrwbZG+wvDOmVbifHyOUOQJXxqEy6r0faRrPzTQ==}
+    dependencies:
+      dezalgo: 1.0.3
+      hexoid: 1.0.0
+      once: 1.4.0
+      qs: 6.9.3
+    dev: false
+
   /front-matter/4.0.2:
     resolution: {integrity: sha512-I8ZuJ/qG92NWX8i5x1Y8qyj3vizhXS31OxjKDu3LKP+7/qBgfIKValiZIEwoVoJKUHlhWtYrktkxV1XsX+pPlg==}
     dependencies:
@@ -248,6 +278,11 @@ packages:
 
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
+    engines: {node: '>=8'}
+    dev: false
+
+  /hexoid/1.0.0:
+    resolution: {integrity: sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==}
     engines: {node: '>=8'}
     dev: false
 
@@ -377,6 +412,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /once/1.4.0:
+    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    dependencies:
+      wrappy: 1.0.2
+    dev: false
+
   /postcss/8.2.15:
     resolution: {integrity: sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==}
     engines: {node: ^10 || ^12 || >=14}
@@ -384,6 +425,11 @@ packages:
       colorette: 1.4.0
       nanoid: 3.1.32
       source-map: 0.6.1
+    dev: false
+
+  /qs/6.9.3:
+    resolution: {integrity: sha512-EbZYNarm6138UKKq46tdx08Yo/q9ZhFoAXAI1meAFd2GtbRDhbZY2WQSICskT0c5q99aFzLG1D4nvTk9tqfXIw==}
+    engines: {node: '>=0.6'}
     dev: false
 
   /react-dom/17.0.2_react@17.0.2:
@@ -535,4 +581,8 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
+    dev: false
+
+  /wrappy/1.0.2:
+    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
     dev: false
