@@ -16,7 +16,7 @@ You only need to [import your Git repository](https://vercel.com/new) into Verce
 If you'd like to avoid using a Git repository, you can also deploy the directory by running [Vercel CLI](https://vercel.com/cli):
 
 ```sh
-pnpm add -g vercel
+yarn global add vercel
 vercel
 ```
 
@@ -27,13 +27,13 @@ It is generally recommended to use a Git repository, because future commits will
 To run your Remix app locally, make sure your project's local dependencies are installed:
 
 ```sh
-pnpm install
+yarn
 ```
 
 Afterwards, start the Remix development server like so:
 
 ```sh
-pnpm dev
+yarn dev
 ```
 
 Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
