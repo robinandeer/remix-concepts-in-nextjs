@@ -1,5 +1,6 @@
+import { Link, LoaderFunction } from "remix"
+
 import type {CompletePost} from "~/post.server"
-import type { LoaderFunction } from "remix"
 import { getPost } from "~/post.server"
 import invariant from "tiny-invariant"
 import { useLoaderData } from "remix"
@@ -13,6 +14,14 @@ export default function PostSlug() {
   const post = useLoaderData<CompletePost>()
 
   return (
-    <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <div>
+      <main>
+        <div dangerouslySetInnerHTML={{__html: post.html}} />
+      </main>
+
+      <footer>
+        <Link to="/">Home</Link>
+      </footer>
+    </div>
   );
 }

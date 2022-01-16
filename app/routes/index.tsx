@@ -24,6 +24,10 @@ export default function Index() {
           </li>
         ))}
       </ul>
+
+      <footer>
+        <Link to="admin">Admin</Link>
+      </footer>
     </div>
   );
 }
