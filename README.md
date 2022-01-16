@@ -11,16 +11,31 @@ You are currently viewing the `remix` implementation.
 
 ## Deployment
 
-You only need to [import your Git repository](https://vercel.com/new) into Vercel, and it will be deployed.
+## Fly Setup
 
-If you'd like to avoid using a Git repository, you can also deploy the directory by running [Vercel CLI](https://vercel.com/cli):
+1. [Install Fly](https://fly.io/docs/getting-started/installing-flyctl/)
+
+2. Sign up and log in to Fly
+
+   ```sh
+   flyctl auth signup
+   ```
+
+3. Setup Fly. It might ask if you want to deploy, say no since you haven't built the app yet.
+
+   ```sh
+   flyctl launch
+   ```
+
+If you've followed the setup instructions already, all you need to do is run this:
 
 ```sh
-yarn global add vercel
-vercel
+yarn deploy
 ```
 
-It is generally recommended to use a Git repository, because future commits will then automatically be deployed by Vercel, through its [Git Integration](https://vercel.com/docs/concepts/git).
+You can run `flyctl info` to get the url and ip address of your server.
+
+Check out the [fly docs](https://fly.io/docs/getting-started/node/) for more information.
 
 ## Development
 
@@ -37,5 +52,3 @@ yarn dev
 ```
 
 Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
-
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
