@@ -14,3 +14,7 @@
 # misc
 .DS_Store
 *.pem
+
+# remix
+/api/_build
+/public/build
