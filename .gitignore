@@ -6,3 +6,6 @@
 
 /public/build
 /api/_build
+
+/.vercel
+.DS_Store
